@@ -1,0 +1,7 @@
+{# Page to be displayed on errors -#}
+
+{% extends "base.html" %}
+
+{% block body %}
+    <h2>{{ e.code }} {{ e.name }}</h2>
+{%- endblock %}

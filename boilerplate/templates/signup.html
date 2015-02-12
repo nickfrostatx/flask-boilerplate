@@ -1,0 +1,12 @@
+{# Signup page -#}
+
+{% extends "page.html" %}
+
+{% block content %}
+      <form method="post">
+        {{ form.csrf_token }}
+        {{ form.email(placeholder=form.email.label.text, required=true, autofocus=true) }}
+        {{ form.password(placeholder=form.password.label.text, required=true) }}
+        <input type="submit" value="Sign up" />
+      </form>
+{%- endblock %}
