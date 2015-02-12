@@ -26,11 +26,14 @@ To convert this folder to your own Flask app, change the following things:
 
 ## Setting up development environment
 
-* Set up database configuration as necessary
 * Create a virtualenv, and activate it
 * Set BOILERPLATE_SETTINGS environment variable to config file
   * Can be achieved with `postactivate` script in virtualenvwrapper
 * `pip install --editable file:/path/to/app/directory`
+
+Create the database, then run the following command to set up tables
+
+`boilerplate-createdb`
 
 Now you can run the application with the following command:
 
