@@ -2,4 +2,4 @@
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 source venv/bin/activate
-exec venv/bin/uwsgi app:app --socket socket -w app:app
+exec venv/bin/uwsgi -s socket -w app:app
