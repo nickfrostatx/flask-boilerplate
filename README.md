@@ -18,7 +18,7 @@ To convert this folder to your own Flask app, change the following things:
   * `app.py.sample`
   * `nginx.conf.sample`
 * Rename in `setup.py`
-  * `name='boilerplate'`
+  * `name='flask-boilerplate'`
   * `packages=['boilerplate']`
   * `'boilerplate-run = boilerplate.dev:run'`
 * Change the settings environment variable name in `dev.py`
