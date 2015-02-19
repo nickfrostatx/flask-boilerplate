@@ -25,7 +25,7 @@ def handle_errors(app, include_500=False):
 
 def html_handler(e):
     """Return an error page for exception e"""
-    return render_template('error.html', e=e)
+    return render_template('error.html', e=e), e.code
 
 def register_html_handler(app, include_500=False):
     """Register html error page as default error handler for app"""
